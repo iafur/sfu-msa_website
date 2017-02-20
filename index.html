@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>SFU MSA</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- Latest compiled and minified jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+
+		@import 'https://fonts.googleapis.com/css?family=Lora';
+
+		* {
+			font-family: 'Lora', serif;
+		}
+
+		#title {
+			font-family: 'Arial', sans-serif;
+		}
+
+		/**html { 
+			background: url(images/background.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}**/
+
+		body {
+			padding-top: 50px;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img alt="SFU MSA logo" src="images/logo.png" style="margin-bottom: 5px;"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="prayer.html">Prayer</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="events.html">Upcoming Events</a></li>
+							<li><a href="events-calendar.html">Events Calendar</a></li>
+							<li><a href="events-past.html">Past Events</a></li>
+							<li><a href="#">Event Feedback</a></li>
+						</ul>
+					</li>
+					<li><a href="contribute.html">Contribute</a></li>
+					<li><a href="islam.html">Islam</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a href="mailto:contact-msa@sfu.ca"><img src="images/contact-email.png"></a>
+						</div>
+						<div class="navbar-header">
+							<a id="fb-logo" href="https://www.facebook.com/sfumsa/"><img src="images/contact-facebook.png"></a>
+						</div>
+					</div>
+				</div>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="text-center" id="title">
+		<h1 class="text-center">Muslim Students Association</h1>
+		<h2 class="text-center">OF</h2>
+		<h2 class="text-center">Simon Fraser University</h2>
+	</div>
+
+	<hr class="col-md-12">
+
+	<div class="main well well-sm">
+		<p>
+		The Muslim Student Association of Simon Fraser University has been active for many years, and continues to be involved in providing a space for Muslims to pray, learn, meet others and get involved in the community.
+		</p>
+
+		<h4>Announcements</h4>
+		<ul>
+			<li>2nd Annual Fundraiser will be on Sat., Feb. 18 at Masjid al-Salaam. Buy your tickets <a href="fundraiser.html">here</a>.</li>
+			<li>Friday prayers will be in BLU 10021 @ 1 PM every Friday.</li>
+			<li>Please remember to tally the calendar at SFU Surrey's Interfaith Centre every time you pray there so that SFU knows that Muslims are using this facility otherwise we may lose it to other departments which are hoping to expand their offices into that area.</li>
+		</ul>
+
+		<hr>
+
+		<h4>Weekly Newsletter</h4>
+		<p>
+			If you would like to be updated every week about events happening in your community, please sign up below.
+
+			<!-- email subscription form -->
+			<form action="email.php" method="post">
+			<fieldset>
+				Email:
+				<input type="text" name="email">
+				<input type="submit" value="Submit"><br>
+			</fieldset>
+			</form>
+		</p>
+
+	</div>
+
+</body>
+
+</html>
