@@ -52,6 +52,17 @@
 		}
 
 	</style>
+
+	<script type="text/javascript">
+		function validateForm() {
+			var emailCheck = new RegExp("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}");
+		    var x = document.forms["subscribe"]["email"].value;
+		    if (!emailCheck.test(x)) {
+		        alert("Please enter a valid email address.");
+		        return false;
+		    }
+		}
+	</script>
 	
 </head>
 
@@ -114,7 +125,6 @@
 
 		<h4>Announcements</h4>
 		<ul>
-			<li>2nd Annual Fundraiser will be on Sat., Feb. 18 at Masjid al-Salaam. Buy your tickets <a href="fundraiser.html">here</a>.</li>
 			<li>Friday prayers will be in BLU 10021 @ 1 PM every Friday.</li>
 			<li>Please remember to tally the calendar at SFU Surrey's Interfaith Centre every time you pray there so that SFU knows that Muslims are using this facility otherwise we may lose it to other departments which are hoping to expand their offices into that area.</li>
 		</ul>
@@ -126,7 +136,7 @@
 			If you would like to be updated every week about events happening in your community, please sign up below.
 
 			<!-- email subscription form -->
-			<form action="email.php" method="post">
+			<form name="subscribe" action="email.php" method="post" onsubmit="return validateForm()">
 			<fieldset>
 				Email:
 				<input type="text" name="email">

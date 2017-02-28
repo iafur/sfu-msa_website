@@ -118,7 +118,7 @@
 	<div class="main well well-sm">
 		<p>
 			
-			You have successfully subscribed to SFU MSA mailling list.
+			We have received your request to subscribe to the SFU MSA mailing list.
 			
 		</p>
 	</div>
